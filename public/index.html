@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Muhammed Hosny - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-BXjqy2dU8yIVZ/jFbBAaqxrkm6drlwZVjQ5KuDOYBOU7Uy7FsjkPGqJVBg79KIL8f/GpbJupFp3zDx4JRRnSLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header>
+    <h1>Muhammed Hosny</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate engineering student currently in my 3rd year. I have over 3 years of experience working with Flutter and I'm highly skilled in it. I started working with Al3wn startup in January 2022. I love learning new technologies and I'm proficient in Node.js for backend development. I have developed my own API using Node.js and MySQL. I also have experience with Docker and I follow the repository pattern with the BLoC state management system in my Flutter projects.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="me.jpg" alt="Muhammed Hosny">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+<div class="project-tiles">
+  <div class="project-tile">
+    <img src="pr1.png" alt="Al3wn App">
+    <div class="project-overlay">
+      <h3>Al3wn App</h3>
+      <p>Collecting all educational resources in one place.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="button-container">
+      <button class="prev-image-btn"></button>
+      <button class="next-image-btn"></button>
+    </div>
+  </div>
+
+
+      <!-- <div class="project-tile">
+        <img src="pr2.png" alt="Project 1">
+        <div class="project-overlay">
+          <h3>Project 1</h3>
+          <p>Description of Project 1</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="project-tile">
+        <img src="me.jpg" alt="Project 2">
+        <div class="project-overlay">
+          <h3>Project 2</h3>
+          <p>Description of Project 2</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="project-tile">
+        <img src="me.jpg" alt="Project 3">
+        <div class="project-overlay">
+          <h3>Project 3</h3>
+          <p>Description of Project 3</p>
+          <a href="#">Read More</a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <ul class="contact-list">
+      <li>
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/mhosnyessa">Github</a>
+      </li>
+      <li>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/muhammed-hosny-a145ba1b0/">LinkedIn</a>
+      </li>
+      <li>
+        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/muhammed.hosny.73/">Facebook</a>
+      </li>
+      <li>
+        <i class="fab fa-twitter"></i>
+        <a href="https://twitter.com/MHosnyDev">Twitter</a>
+      </li>
+      <li>
+        <i class="fab fa-leetcode"></i>
+        <a href="https://leetcode.com/MHosnyE/">Leetcode</a>
+      </li>
+      <li>
+        <i class="fab fa-codeforces"></i>
+        <a href="https://codeforces.com/profile/mhosny">Codeforces</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2023 Muhammed Hosny. All rights reserved.</p>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var images = ['pr1.png', 'pr3.png'];
+    var currentIndex = 0;
+
+    $('.next-image-btn').on('click', function() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      var nextImage = images[currentIndex];
+      $(this).siblings('img').attr('src', nextImage);
+    });
+  });
+</script>
+
+  <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
+
+
